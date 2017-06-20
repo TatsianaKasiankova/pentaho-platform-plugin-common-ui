@@ -19,7 +19,7 @@
  * Timezone Utility to generate a timezone offset string from a given timezone.
  */
 
-define("common-ui/util/timeutil", [], function() {
+define("common-ui/util/timeutil", ['cdf/lib/moment-timezone'], function(momentTimezone) {
   return {
     offsets: {
       "ACT": 570,
